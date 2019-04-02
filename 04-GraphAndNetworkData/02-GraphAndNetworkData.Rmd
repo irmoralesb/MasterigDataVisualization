@@ -1,0 +1,73 @@
+---
+title: "Mastering Data Visualization - Graph and Network Data"
+output: github_document
+---
+
+# Visualizing Graph and Network Data
+
+Setting up environment
+
+```{r}
+library(igraph)
+
+actors <- read.csv("../data/Actors.csv")
+head(actors)
+actors5 <- actors[actors$Count >= 5,]
+
+graph5 <- graph.data.frame(
+  d = actors5,
+  directed = FALSE)
+
+```
+
+
+# Charts/Plots
+
+## Small Graph
+
+```{r}
+plot(
+  x = graph5,
+  edge.curved = FALSE,
+  main = "Five-time or More Acting Pairs")
+```
+
+    
+## Large Graph
+
+### Create undirected graph object
+```{r}
+actors2 <- actors[actors$Count >= 2,]
+
+graph2 <- graph.data.frame(
+  d = actors2,
+  directed  = FALSE)
+
+```
+
+
+
+```{r}
+plot(
+  x = graph2,
+  vertex.size = 2,
+  vertex.label = NA,
+  edge.curved = FALSE,
+  edge.width = edge_attr(graph2)$Count,
+  main = "Twice or More Acting Pairs")
+```
+
+## Community Graph
+
+```{r}
+clusters <- cluster_edge_betweenness(graph2)
+plot(
+  x =  clusters,
+  y = graph2,
+  vertex.size = 3,
+  vertex.label = NA,
+  edge.curved = FALSE,
+  main = "Acting Communities")
+
+```
+

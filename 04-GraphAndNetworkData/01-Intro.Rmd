@@ -1,0 +1,47 @@
+---
+title: "Mastering Data Visualization - Graph and Network Data"
+output: github_document
+---
+
+# Visualizing Graph and Network Data
+
+## Graph and Network Data Analysis
+
+    * Relationships
+    * Network
+    * Graph
+    * Nodes and Edges
+      - Vertices (Nodes)
+      - Edges
+      - Directed
+      - Undirected
+      - Weighted
+    * Network of pairs
+    * Additional variables
+    
+# Charts/Plots
+
+## Small Graph
+
+    * Relationships
+    * Labels
+    * Small number of vertices
+    * Additional variables
+    
+    
+## Large Graph
+
+    * Shape and patterns
+    * Minimize noise
+    * Additional variables
+
+## Community Graph
+
+    * Clusters
+    * Colored polygons
+    * Two-color lines
+    
+## Questions
+
+    * Which actors have acted together?
+    * Are there acting communities?
