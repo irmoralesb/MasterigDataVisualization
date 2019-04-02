@@ -1,0 +1,237 @@
+---
+title: "Mastering Data Visualization - Spatial Data"
+output: github_document
+---
+
+
+# Spatial Data
+
+Setting up environment
+```{r}
+library(ggplot2)
+library(dplyr)
+```
+
+Create a base map (no data)
+
+```{r}
+ggplot() + 
+  borders(
+    database = "world",
+    colour = "grey60",
+    fill = "grey90") +
+  ggtitle("Base Map of the World") +
+  xlab("") + 
+  ylab("") +
+  theme(
+    panel.background = element_blank() ,
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank())
+  
+
+```
+
+Load the data
+```{r}
+movies <- read.csv("../data/Movies by Country.csv")
+countries <- read.csv("../data/Countries.csv")
+head(movies)
+```
+
+
+## Dot Density Map
+
+```{r}
+mymovies <- ggplot(data = movies) +
+  borders(
+    database = "world",
+    colour = "grey60",
+    fill = "grey90") +
+  xlab("") +
+  ylab("") +
+  theme(
+    panel.background = element_blank() ,
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank())
+
+mymovies +
+  ggtitle("Movies by Country") +
+  geom_point(
+    aes(
+      x = Longitude,
+      y = Latitude))
+```
+
+## Contour Map
+
+```{r}
+mymovies +
+  ggtitle("Density of Movies by Country") +
+  geom_density2d(
+    aes(
+      x = Longitude,
+      y = Latitude))
+  
+```
+
+### Zoom into the map
+
+```{r}
+mymovies +
+  ggtitle("Density of Movies by Country") +
+  coord_cartesian(
+    xlim = c(-20,59),
+    ylim = c(35,71)) +
+  geom_density2d(
+    aes(
+    x = Longitude,
+    y = Latitude))
+
+```
+
+
+## Level Map
+
+```{r}
+mymovies +
+  coord_cartesian(
+    xlim = c(-20,59),
+    ylim = c(35,71)) +
+  stat_density2d(
+    aes(
+     x = Longitude,
+     y = Latitude,
+     alpha = ..level..),
+    geom = "polygon",
+    fill = "blue") +
+  ggtitle("Density of Movies by Country") +
+  labs(alpha = "Density")
+```
+
+## Bubble Map
+
+```{r}
+
+mycountries <- ggplot(data = countries) +
+  borders(
+    database = "world",
+    colour = "grey60",
+    fill = "grey90") +
+  xlab("") +
+  ylab("") +
+  theme(
+    panel.background = element_blank() ,
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank())
+
+
+mycountries +
+  geom_point(aes(
+    x = Longitude,
+    y = Latitude,
+    size = Count)) +
+  scale_size_area(
+    max_size = 5) +
+  ggtitle("Count of Movies by Country") +
+  labs(size="Movies")
+
+```
+
+## Load map data
+
+```{r}
+map <- map_data("world")
+head(map)
+```
+
+Join countries and map data
+```{r}
+countries2 <- countries  %>%
+  left_join(map,
+            by = c("Country" = "region")) %>%
+  select(
+    Country,
+    Longitude = long,
+    Latitude = lat,
+    Group = group,
+    Order = order,
+    Count) %>%
+  arrange(Order) %>%
+  as.data.frame()
+
+head(countries2)
+```
+
+## Choropletth
+
+```{r}
+mycountries2 <- ggplot(
+    data = countries2) + 
+    borders(
+        database = "world",
+        colour = "grey60",
+        fill = "grey90") +
+    xlab("") +
+    ylab("") +
+    theme(
+        panel.background = element_blank(),
+        axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.ticks.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks.y=element_blank())
+
+mycountries2 +
+  geom_polygon(aes(
+    x = Longitude,
+    y = Latitude,
+    group = Group,
+    fill = Count),
+    color = "grey60") +
+  scale_fill_gradient(
+    low = "white",
+    high = "red") +
+  ggtitle("Count of Movies by Country") +
+  labs(color = "Movies")
+
+```
+
+
+## Reproject a Map
+```{r}
+mycountries2 +
+  coord_map(
+    projection = "ortho",
+    orientation = c(41,-74,0)) +
+  geom_polygon(aes(
+    x = Longitude,
+    y = Latitude,
+    group = Group,
+    fill = Count),
+    color = "grey60") +
+  scale_fill_gradient(
+    low = "white",
+    high = "red") +
+  ggtitle("Count of Movies by Country") +
+  labs(color = "Movies")
+
+```
+
+# Additional Resources
+
+```{r}
+?mapproject
+```

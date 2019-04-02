@@ -1,0 +1,68 @@
+---
+title: "Mastering Data Visualization - Spatial Data"
+output: github_document
+---
+
+# Visualizing Spatial Data
+
+## Spatial Data Analysis
+
+    * It uses topological, geometric or geographic properties
+    * Geospatial analysis - for earth places
+    * Two numeric variables
+    * Longitude
+    * Latitude
+    * Other variables can be used, not only latitude and longitude.
+    
+# Charts/Plots
+
+## Dot Density Map
+
+    * Similar to a scatterplot
+    * Longitude and latitude
+    * Small number of points
+    * Display a 3rd variable
+
+## Contour Map
+
+    * Similar to a contour plot
+    * Contour lines
+    * Large number of points
+
+## Level Map
+
+    * Similar to a level plot
+    * Filled contour polygons
+    * Large number of points
+    
+**Note: we can use also the square and hexagonal variants for this map, not covered in the course but possible to achieve.**
+
+## Bubble Map
+
+    * Similar to bubble chart
+    * Sized by area
+    * Small number of points
+    
+## Choropleth
+
+    * Areas filled with color
+    * Geo-political boundaries
+    * Colored by 3rd variable
+    * Normalize values
+
+## Map Projections
+
+    * Mercator projection
+    * Orthographic projection
+    * 2D projection of 3D sphere
+    * Prevents distorion
+    
+# Notes
+
+    * This is only the intro, to get into the subject it is recommended to take a look to best practices.
+
+# Questions
+
+    * What counties are we distributing movies to?
+    * Where do we distribute the most movies?
+    

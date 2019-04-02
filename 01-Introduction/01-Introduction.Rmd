@@ -1,0 +1,14 @@
+---
+title: "Mastering Data Visualization - Introduction"
+output: github_document
+---
+
+# Types
+
+    * Visualizing Spatial Data
+    * Visualizing Hierarchical Data
+    * Visualizing Graph and Network data
+    * Visualizing Textual Data
+    * Animating Data Visualizations
+    * Create Intractive Data Visualizations
+    
