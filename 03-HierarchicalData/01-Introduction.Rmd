@@ -1,0 +1,60 @@
+---
+title: "Mastering Data Visualization - Hierarchical Data Analysis"
+output: github_document
+---
+
+# Hierarchical Data Analysis
+
+
+## Details
+
+    * Parent-child relationship
+    * Modeled as trees
+    * Multiple levels
+
+## Types
+
+    * Two-level  hierarchy
+    * Third numeric variable
+    
+# Chart/Plots
+
+## Tree Diagram
+
+    * Parent-child relationship
+    * Nodes and edges
+    * Small number of nodes
+    * Color and size
+    
+## Tree Graph
+
+    * Graph layout algorithm
+    * Readibility / aesthetics
+    * Large number of nodes
+    
+## Dendrogram
+
+    * Cluster analysis
+    * Distance metric
+    * Phylogenetic trees
+    
+## Radial Tree
+
+    * Polar coordinate system
+    * Large number of nodes
+    * More difficult to compare
+    
+Tree Map
+
+    * Nested rectangles
+    * Sized by numeric variable
+    * Colored by other variable
+    
+# Notes
+
+    * This is only the intro, to get into the subject it is recommended to take a look to best practices.
+
+# Questions
+
+    * What regions contain our top 10 distribution?
+    * What is their average box office revenue?

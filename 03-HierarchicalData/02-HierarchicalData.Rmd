@@ -1,0 +1,119 @@
+---
+title: "Mastering Data Visualization - Hierarchical Data Analysis"
+output: github_document
+---
+
+# Hierarchical Data Analysis
+
+Setting up environment
+```{r}
+library(data.tree)
+library(igraph)
+library(ape)
+library(treemap)
+hierarchy <- read.csv("../data/Hierarchy.csv")
+hierarchy$Path <- paste(
+  "All",
+  hierarchy$Continent,
+  hierarchy$Country,
+  sep = "/")
+```
+
+
+```{r}
+tree <- as.Node(
+  x = hierarchy,
+  pathName = "Path")
+print(tree, limit = 10)
+```
+
+# Charts/Plots
+## Tree Diagram
+
+```{r}
+# is not rendered on R Notebook file
+#plot(tree)
+```
+
+
+## Tree Graph
+Create a tree graph
+```{r}
+treeGraph <- as.igraph(tree)
+plot(
+  x = treeGraph,
+  main = "Geographic Distribution Hierarchy")
+```
+
+
+## Dendrogram
+Add row names for dendro labels
+
+```{r}
+row.names(hierarchy) <- hierarchy$Country
+head(hierarchy,5)
+```
+
+
+```{r}
+distance <- dist(hierarchy[,c(3,4)])
+round(distance, 0)
+```
+
+Create hierarchical clusters
+```{r}
+clusters <- hclust(distance)
+```
+Plot
+
+```{r}
+plot(
+  x = clusters <- hclust(distance),
+  main = "Hierarchical Clusters of Countries")
+```
+    
+    
+## Radial Tree
+
+# Create a phylogenic tree
+
+```{r}
+phylo <- as.phylo(clusters)
+```
+
+Plot
+```{r}
+plot(
+  x = phylo,
+  type = "fan")
+```
+
+
+Tree Map
+
+Create a frequency treemap 
+```{r}
+treemap(
+  dtf = hierarchy,
+  index = c("Continent","Country"),
+  vSize = "Count",
+  vColor = "Continent",
+  type = "categorical",
+  title = "Count of Movies by Continent and Country",
+  position.legend = "none")
+```
+
+Create a treemap
+
+```{r}
+treemap(
+  dtf = hierarchy,
+  index = c("Continent","Country"),
+  vSize = "Count",
+  vColor = "Box.Office",
+  type = "value",
+  palette = c("#FF681D", "#FFE1D2"),
+  title = "Count of Movies and Average Box Office Revenue\nby Continent and Country",
+    title.legend = "Average Box Office Revenue ($M)")
+```
+
