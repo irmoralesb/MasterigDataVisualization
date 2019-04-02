@@ -1,0 +1,95 @@
+---
+title: "Mastering Data Visualization - Text Data"
+output: github_document
+---
+
+# Visualizing Text Data
+
+## Text Data Analysis
+
+Setting up environment
+
+```{r}
+
+library(tm) # text mining package
+library(SnowballC)
+library(wordcloud)
+plots <- read.csv("../data/Plots.csv")
+plots$Plot <- as.character(plots$Plot)
+head(plots$Plot, 3)
+
+```
+
+Convert plots into corpus
+```{r}
+corpus <- Corpus(VectorSource(plots$Plot))
+corpus[[1]]$content
+```
+Convert text to lower case
+```{r}
+corpus <- tm_map(corpus, content_transformer(tolower))
+```
+
+Remove punctuation
+```{r}
+corpus <- tm_map(corpus, removePunctuation)
+```
+
+Remove stop words from corpus
+```{r}
+corpus <- tm_map(corpus, removeWords, stopwords("english"))
+```
+
+Reduce terms to stems in corpus
+```{r}
+corpus <- tm_map(corpus, stemDocument, "english")
+```
+
+
+Strip whitespace from corpus
+```{r}
+corpus <- tm_map(corpus, stripWhitespace)
+```
+
+Convert corpus to text document
+```{r}
+corpus <- tm_map(corpus, PlainTextDocument)
+```
+ 
+Taking a look at the current result
+```{r}
+corpus[[1]]$content
+```
+
+
+Create a frequency word cloud
+```{r}
+wordcloud(
+    words = corpus,
+    max.words = 50)
+```
+
+
+# Charts/Plots
+
+
+## Frequency Word Cloud
+
+```{r}
+
+```
+
+
+## Quantitative Word Cloud
+
+```{r}
+
+```
+
+    
+## Colored Word Cloud
+
+```{r}
+
+```
+
