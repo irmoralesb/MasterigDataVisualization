@@ -14,6 +14,7 @@ Setting up environment
 library(tm) # text mining package
 library(SnowballC)
 library(wordcloud)
+library(RColorBrewer)
 plots <- read.csv("../data/Plots.csv")
 plots$Plot <- as.character(plots$Plot)
 head(plots$Plot, 3)
@@ -58,38 +59,56 @@ corpus <- tm_map(corpus, PlainTextDocument)
  
 Taking a look at the current result
 ```{r}
-corpus[[1]]$content
+head(corpus[[1]]$content)
 ```
-
-
-Create a frequency word cloud
-```{r}
-wordcloud(
-    words = corpus,
-    max.words = 50)
-```
-
 
 # Charts/Plots
 
 
 ## Frequency Word Cloud
 
+Create a frequency word cloud
 ```{r}
-
+wordcloud(
+    words = corpus[1],
+    max.words = 50)
 ```
+
 
 
 ## Quantitative Word Cloud
 
+Setting up environtment
 ```{r}
+words <- read.csv("../data/Words.csv")
+head(words, n=10)
+```
 
+
+```{r}
+wordcloud(
+  words = words$Term,
+  freq = words$Box.Office,
+  max.words = 50,
+  scale = c(2,0.1))
 ```
 
     
 ## Colored Word Cloud
 
 ```{r}
+palette <- brewer.pal(
+  n = 9,
+  name = "Oranges")
 
+colors <- palette[cut(words$Critic.Score, 9)]
+
+wordcloud(
+  words = words$Term,
+  freq = words$Box.Office,
+  max.words = 50,
+  scale = c(2,0.5),
+  colors = colors,
+  ordered.colors = TRUE)
 ```
 
