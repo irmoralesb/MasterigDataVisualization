@@ -1,0 +1,91 @@
+---
+title: "Hierarchical Data Analysis"
+output: github_document
+---
+
+Setting up environment
+
+**PLEASE NOTE: These are FAKE Values**
+
+```{r}
+library(data.tree)
+library(igraph)
+library(ape)
+library(treemap)
+
+os_dataset <- read.csv("../data/OperatingSystems.csv", as.is = c("Name"))
+
+os_dataset$Path <-  paste("OS",
+                          os_dataset$Platform,
+                          os_dataset$Name,
+                          sep="/")
+  
+
+tree <- as.Node(
+  x = os_dataset,
+  pathName = "Path")
+
+print(tree, limit = 10)
+```
+
+
+## Tree Diagram
+
+```{r}
+treeGraph <- as.igraph(tree)
+#igraph.options(plot.layout = layout.circle, vertex.size=5, node.size = .5) #(plot.layout=layout_as_tree)
+#vertex.size=5
+igraph.options(vertex.size=15, plot.layout=layout.auto)
+plot(
+  x = treeGraph,
+  main = "App Genre Distribution Hierarchy")
+```
+
+
+## Dendrogram
+
+```{r}
+row.names(os_dataset) <- os_dataset$Name
+head(os_dataset)
+```
+
+```{r}
+distance <- dist(os_dataset[,c(1,4)])
+attr(distance,"Labels") <- os_dataset$Name
+print(distance)
+```
+
+Create hierarchical clusters
+
+```{r}
+clusters <- hclust(distance)
+
+plot(
+  x = clusters,
+  main ="Hierarchical Cluster of OS (Fake data)")
+```
+
+## Radial Tree
+
+```{r}
+phylo <- as.phylo(clusters)
+plot(
+  x = phylo,
+  type = "fan")
+
+```
+
+## Tree Map
+
+```{r}
+treemap(
+  dtf = os_dataset,
+  index = c("Platform","Name"),
+  vSize = "Max.Num.Users",
+  vColor = "Max.Num.Users",
+  type = "value",
+  palette = c("#FF681D", "#FFE1D2"),
+  title = "Count of OS' and Max Number of Users by Platform and OS Name",
+  title.legend = "Max Number of Users")
+```
+

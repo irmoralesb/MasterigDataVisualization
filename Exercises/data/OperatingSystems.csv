@@ -1,0 +1,19 @@
+Platform,Name,Type,Max.Num.Users,Abbr
+Windows,Windows 3.11,Client,1,W3
+Windows,Windows 95,Client,20,W95
+Windows,Windows 98,Client,30,W98
+Windows,Windows ME,Client,25,WME
+Windows,Windows 2000,Client,100,W2K
+Windows,Windows XP,Client,250,WXP
+Windows,Windows Vista,Client,15,WV
+Windows,Windows 7,Client,900,W7
+Windows,Windows 8,Client,15,W8
+Windows,Windows 10,Client,800,W10
+MacOS,OS 8,Client,1,OS8
+MacOS,OS 9,Client,3,OS9
+MacOS,OS X,Client,320,OSX
+Linux,OpenSuse,Client,7,SUS
+Linux,Ubuntu,Client,10,UBU
+Linux,Fedora,Client,9,FED
+Linux,Kali,Client,1,KAL
+Linux,Red Hat,Client,90,RH
