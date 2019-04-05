@@ -1,0 +1,3540 @@
+https://insights.stackoverflow.com/survey/2018/
+Developer Survey Results
+2018
+
+    Overview
+    Developer Profile
+    Technology
+        I. Most Popular Technologies
+        II. Most Loved, Dreaded, and Wanted
+        III. Development Environments and Tools
+        IV. Top Paying Technologies
+        V. Correlated Technologies
+        VI. Technology and Society
+    Work
+    Community
+    Methodology
+
+    Back to top
+
+    Take control of your job search.
+
+    Stack Overflow Jobs puts developers first. No recruiter spam or fake job listings.
+
+Find your next developer.
+
+Source, attract and recruit developers on the platform they trust most.
+
+Your private version of Stack Overflow.
+
+Create a secure space for your engineering team to ask and answer private questions.
+Overview
+
+This year, over 100,000 developers told us how they learn, build their careers, which tools they’re using, and what they want in a job.
+
+Each year, we ask the developer community about everything from their favorite technologies to their job preferences. This year marks the eighth year we’ve published our Annual Developer Survey results—with the largest number of respondents yet. Over 100,000 developers took the 30-minute survey this past January.
+
+This year, we covered a few new topics ranging from artificial intelligence to ethics in coding. Here are a few of the top takeaways from this year’s results:
+
+    DevOps and machine learning are important trends in the software industry today. Languages and frameworks associated with these kinds of works are on the rise, and developers working in these areas command the highest salaries.
+    Only tiny fractions of developers say that they would write unethical code or that they have no obligation to consider the ethical implications of code, but beyond that, respondents see a lot of ethical gray. Developers are not sure how they would report ethical problems, and have differing ideas about who ultimately is responsible for unethical code.
+    Developers are overall optimistic about the possibilities that artificial intelligence offers, but are not in agreement about what the dangers of AI are.
+    Python has risen in the ranks of programming languages on our survey, surpassing C# in popularity this year, much like it surpassed PHP last year.
+    When assessing a prospective job, different kinds of developers apply different sets of priorities. Women say their highest priorities are company culture and opportunities for professional development, while men say their highest priorities are compensation and working with specific technologies.
+
+Want to dive into the results yourself? We made the anonymized results of the survey available for download under the Open Database License (ODbL). We look forward to seeing what you find!
+Developer Profile
+
+What we know about the developers who are writing the script for the future
+Geography
+
+    Survey Respondents
+    Monthly Stack Overflow Visits
+    Professional Developers
+
++-
+
+Each month, about 50 million people visit Stack Overflow to learn, share, and build their careers. We estimate that 21 million of these people are professional developers and university-level students.
+
+Our estimate of professional developers comes from the things people read and do when they visit Stack Overflow. We collect data on user activity to help surface jobs we think you might find interesting and questions we think you can answer. You can download and clear this data at any time.
+Developer Roles
+Developer Type
+Back-end developer
+
+    57.9%
+
+Full-stack developer
+
+    48.2%
+
+Front-end developer
+
+    37.8%
+
+Mobile developer
+
+    20.4%
+
+Desktop or enterprise applications developer
+
+    17.2%
+
+Student
+
+    17.1%
+
+Database administrator
+
+    14.3%
+
+Designer
+
+    13.1%
+
+System administrator
+
+    11.3%
+
+DevOps specialist
+
+    10.4%
+
+Data or business analyst
+
+    8.2%
+
+Data scientist or machine learning specialist
+
+    7.7%
+
+QA or test developer
+
+    6.7%
+
+Engineering manager
+
+    5.7%
+
+Embedded applications or devices developer
+
+    5.2%
+
+Game or graphics developer
+
+    5.0%
+
+Product manager
+
+    4.7%
+
+Educator or academic researcher
+
+    4.0%
+
+C-suite executive (CEO, CTO, etc.)
+
+    3.8%
+
+Marketing or sales professional
+
+    1.2%
+
+92,098 responses; select all that apply
+
+Almost 60% of respondents identify as back-end developers, and about 20% consider themselves mobile developers. The median number of developer type identifications per respondent is 2, and the most common pairs are combinations of back-end, front-end, and full-stack developer. Pairs that are highly correlated are database administrator and system administrator, DevOps specialist and system administrator, and designer and front-end developer.
+Contributing to Open Source
+
+    All Respondents
+    Professional Developers
+
+No
+
+    56.4%
+
+Yes
+
+    43.6%
+
+98,855 responses
+
+Almost half of professional developers on Stack Overflow contribute to open source projects. Involvement in open source varies with language. Over 70% of developers who work with Rust, Julia, and Clojure contribute to open source, while less than 40% of developers who work with VBA, VB.NET, and C# do so.
+Coding as a Hobby
+
+    All Respondents
+    Professional Developers
+
+Yes
+
+    80.8%
+
+No
+
+    19.2%
+
+98,855 responses
+
+Many developers work on code outside of work. Over 80% of our respondents say that they code as a hobby. Other interests or responsibilities outside of software don't seem to reduce developers' interest in coding as a hobby. Those who said they are parents or have other caretaking responsibilities, those who exercise daily, or those who spend the most time outside were slightly more likely to code as a hobby than other groups.
+Experience
+Years Since Learning to Code
+
+    All Respondents
+    Professional Developers
+
+0-2 years
+
+    11.4%
+
+3-5 years
+
+    24.8%
+
+6-8 years
+
+    20.6%
+
+9-11 years
+
+    13.0%
+
+12-14 years
+
+    8.6%
+
+15-17 years
+
+    6.5%
+
+18-20 years
+
+    5.4%
+
+21-23 years
+
+    2.8%
+
+24-26 years
+
+    2.0%
+
+27-29 years
+
+    1.1%
+
+30 or more years
+
+    3.8%
+
+93,835 responses
+
+There is a wide range of experience levels among developers, and a full third of professional developers on Stack Overflow learned to code within the past five years.
+Years Coding Professionally
+0-2 years
+
+    30.1%
+
+3-5 years
+
+    27.4%
+
+6-8 years
+
+    14.6%
+
+9-11 years
+
+    9.7%
+
+12-14 years
+
+    5.5%
+
+15-17 years
+
+    3.9%
+
+18-20 years
+
+    3.6%
+
+21-23 years
+
+    1.8%
+
+24-26 years
+
+    1.1%
+
+27-29 years
+
+    0.6%
+
+30 or more years
+
+    1.7%
+
+77,903 responses
+
+Over half of respondents have five years of professional coding experience or less. Developers who work with languages such as Cobol and Perl have the most years of professional coding experience, while developers who work with languages like Matlab, Haskell, and Kotlin have the fewest.
+Years of Professional Coding Experience by Developer Type
+Engineering manager
+
+    10.2
+
+DevOps specialist
+
+    8.0
+
+Desktop or enterprise applications developer
+
+    7.7
+
+Embedded applications or devices developer
+
+    7.5
+
+Data or business analyst
+
+    7.2
+
+System administrator
+
+    7.0
+
+Database administrator
+
+    6.9
+
+Full-stack developer
+
+    6.3
+
+Back-end developer
+
+    6.2
+
+Educator or academic researcher
+
+    6.2
+
+Designer
+
+    6.0
+
+QA or test developer
+
+    5.8
+
+Front-end developer
+
+    5.5
+
+Data scientist or machine learning specialist
+
+    5.5
+
+Mobile developer
+
+    5.2
+
+Game or graphics developer
+
+    4.6
+
+Mean of 77,078 responses
+
+Developers who work in different areas of software development have different average amounts of experience. DevOps specialists and developers who code for desktop and enterprise applications have the most experience. DevOps as a discipline and professional identity is relatively new, but the people working in this field are highly experienced. Game/graphics developers and mobile developers have the fewest years of experience.
+Education
+How Many Developers are Students?
+No
+
+    74.2%
+
+Yes, full-time
+
+    19.4%
+
+Yes, part-time
+
+    6.4%
+
+94,901 responses
+
+About one-quarter of respondents are enrolled in a formal college or university program full-time or part-time.
+Educational Attainment
+
+    All Respondents
+    Professional Developers
+
+I never completed any formal education
+
+    0.7%
+
+Primary/elementary school
+
+    1.7%
+
+Secondary school
+
+    9.5%
+
+Some college/university study without earning a degree
+
+    12.4%
+
+Associate degree
+
+    3.1%
+
+Bachelor's degree
+
+    46.1%
+
+Master's degree
+
+    22.6%
+
+Professional degree
+
+    1.5%
+
+Doctoral degree
+
+    2.3%
+
+94,703 responses
+
+Worldwide, about three-fourths of professional developers have the equivalent of a bachelor's degree or higher. It is not that rare to find accomplished professional developers who have not completed a degree.
+Undergraduate Major
+
+    All Respondents
+    Professional Developers
+    Students
+
+Computer science, computer engineering, or software engineering
+
+    63.7%
+
+Another engineering discipline (ex. civil, electrical, mechanical)
+
+    8.8%
+
+Information systems, information technology, or system administration
+
+    8.2%
+
+A natural science (ex. biology, chemistry, physics)
+
+    3.9%
+
+Mathematics or statistics
+
+    3.6%
+
+Web development or web design
+
+    3.1%
+
+A business discipline (ex. accounting, finance, marketing)
+
+    2.4%
+
+A humanities discipline (ex. literature, history, philosophy)
+
+    2.0%
+
+A social science (ex. anthropology, psychology, political science)
+
+    1.7%
+
+Fine arts or performing arts (ex. graphic design, music, studio art)
+
+    1.4%
+
+I never declared a major
+
+    0.9%
+
+A health science (ex. nursing, pharmacy, radiology)
+
+    0.3%
+
+79,036 responses
+
+Of professional developers who studied at the university level, over 60% said they majored in computer science, computer engineering, or software engineering. This proportion is somewhat higher in currently enrolled students, and the proportion of respondents majoring in other engineering disciplines like electrical and mechanical engineering is lower among current students than among professionals.
+Other Types of Education
+
+    All Respondents
+    Professional Developers
+
+Taught yourself a new language, framework, or tool without taking a formal course
+
+    86.7%
+
+Taken an online course in programming or software development (e.g. a MOOC)
+
+    48.6%
+
+Contributed to open source software
+
+    40.9%
+
+Received on-the-job training in software development
+
+    35.1%
+
+Participated in a hackathon
+
+    26.3%
+
+Participated in online coding competitions (e.g. HackerRank, CodeChef, TopCoder)
+
+    24.3%
+
+Taken a part-time in-person course in programming or software development
+
+    17.9%
+
+Completed an industry certification program (e.g. MCPD)
+
+    13.7%
+
+Participated in a full-time developer training program or bootcamp
+
+    10.3%
+
+67,960 responses; select all that apply
+
+Developers are lifelong learners; almost 90% of all developers say they have taught themselves a new language, framework, or tool outside of their formal education. Among professional developers, almost half say they have taken an online course like a MOOC, and about a quarter have participated in a hackathon.
+Ways Developers Learn on Their Own
+
+    All Respondents
+    Professional Developers
+
+The official documentation and/or standards for the technology
+
+    83.0%
+
+Questions & answers on Stack Overflow
+
+    82.7%
+
+A book or e-book from O’Reilly, Apress, or a similar publisher
+
+    50.2%
+
+Online developer communities other than Stack Overflow (ex. forums, listservs, IRC channels, etc.)
+
+    50.1%
+
+The technology’s online help system
+
+    48.1%
+
+A college/university computer science or software engineering book
+
+    19.7%
+
+Tapping your network of friends, family, and peers versed in the technology
+
+    19.4%
+
+Internal Wikis, chat rooms, or documentation set up by my company for employees
+
+    16.6%
+
+Pre-scheduled tutoring or mentoring sessions with a friend or colleague
+
+    4.1%
+
+57,354 responses; select all that apply
+
+Over 80% of respondents rely on Stack Overflow Q&A when learning something new. Additionally, developers understand the value of good documentation, as over 80% also use documentation as a resource when learning.
+Why Do Developers Participate in Hackathons?
+Because I find it enjoyable
+
+    76.3%
+
+To improve my general technical skills or programming ability
+
+    66.1%
+
+To improve my knowledge of a specific programming language, framework, or other technology
+
+    51.2%
+
+To improve my ability to work on a team with other programmers
+
+    30.0%
+
+To build my professional network
+
+    27.5%
+
+To help me find new job opportunities
+
+    20.8%
+
+To win prizes or cash awards
+
+    18.9%
+
+25,691 responses; select all that apply
+
+Among the respondents who said they have participated in hackathons or online coding competitions, their number one reason for engaging is that they find them enjoyable. These are also opportunities for learning, both general and specific.
+Finding a Job After Bootcamp
+I already had a full-time job as a developer when I began the program
+
+    45.5%
+
+Immediately after graduating
+
+    16.3%
+
+Less than a month
+
+    7.5%
+
+One to three months
+
+    10.0%
+
+Four to six months
+
+    5.2%
+
+Six months to a year
+
+    3.6%
+
+Longer than a year
+
+    3.2%
+
+I haven’t gotten a developer job
+
+    8.7%
+
+6,652 responses
+
+Bootcamps are typically perceived as a way for newcomers to transition into a career as a software developer, but according to our survey, many participants in coding bootcamps were already working as developers. Almost half of our respondents who said they went to a coding bootcamp said they were already working as developers; these developers are likely updating their skills and moving to new areas of the tech industry. Of other bootcamp participants, the most common outcome is to find a job immediately or soon after graduating.
+Demographics
+Gender
+
+    All Respondents
+    Professional Developers
+    Students
+
+Male
+
+    92.9%
+
+Female
+
+    6.9%
+
+Non-binary, genderqueer, or gender non-conforming
+
+    0.9%
+
+64,364 responses; select all that apply
+
+We asked our respondents about their gender identity, and found that over 90% of our respondents are male. According to Quantcast, women account for about 10% of Stack Overflow’s US traffic; this year 9% of US survey respondents are women. We had survey participation at almost the rate we would expect from our traffic, although such a low percentage points to problems with inclusion in the tech industry in general and Stack Overflow in particular. In regions including the United States, India, and the UK, women are represented at higher levels among students than among professional developers.
+
+This year, 0.7% of respondents identified as transgender men or women. The gender identifications are select all that apply, so transgender men and women are included in the categories shown here.
+Race and Ethnicity
+
+    All Respondents
+    Professional Developers
+    Students
+
+White or of European descent
+
+    74.2%
+
+South Asian
+
+    11.5%
+
+Hispanic or Latino/Latina
+
+    6.7%
+
+East Asian
+
+    5.1%
+
+Middle Eastern
+
+    4.1%
+
+Black or of African descent
+
+    2.8%
+
+Native American, Pacific Islander, or Indigenous Australian
+
+    0.8%
+
+57,473 responses; select all that apply
+
+Here again we see evidence for problems with diversity and inclusion. We see higher proportions of developers of color in students than professional developers. This year, 7.4% of professional developers in the United States identified as black, Hispanic or Latino/Latina, or Native American while over 10% of students in the United States identified as a member of one of these groups.
+Sexual Orientation
+
+    All Respondents
+    Professional Developers
+    Students
+
+Straight or heterosexual
+
+    93.2%
+
+Bisexual or Queer
+
+    4.3%
+
+Gay or Lesbian
+
+    2.4%
+
+Asexual
+
+    1.9%
+
+59,765 responses; select all that apply
+
+This is the first year we asked our respondents about their sexual orientation.
+Parents' Education Level
+
+    All Respondents
+    Professional Developers
+    Students
+
+They never completed any formal education
+
+    1.9%
+
+Primary/elementary school
+
+    5.2%
+
+Secondary school
+
+    17.3%
+
+Some college/university study without earning a degree
+
+    9.2%
+
+Associate degree
+
+    4.6%
+
+Bachelor's degree
+
+    29.3%
+
+Master's degree
+
+    22.1%
+
+Professional degree
+
+    4.4%
+
+Doctoral degree
+
+    6.0%
+
+61,813 responses
+
+Like developers themselves, most developers' parents have the equivalent of a bachelor's degree or higher. Just under 40% of respondents said their parents do not hold a bachelor's degree.
+Disability Status
+
+    Mental Health and Differences
+    Physical Differences
+
+I have a mood or emotional disorder (ex. depression, bipolar disorder)
+
+    8.5%
+
+I have an anxiety disorder
+
+    7.8%
+
+I have a concentration and/or memory disorder
+
+    5.9%
+
+I identify as autistic / a person with autism
+
+    2.1%
+
+11,431 responses identified as having a mental difference
+
+We know developers can experience many forms of disability and difference, from mental health challenges to physical disability. Mental health issues like depression and anxiety are particularly common among our respondents. In the United States, almost 20% of respondents said they deal with either or both.
+Experience and Gender
+
+    Men
+    Women
+    Non-binary
+
+0-2 years
+
+    8.1%
+
+3-5 years
+
+    21.9%
+
+6-8 years
+
+    20.7%
+
+9-11 years
+
+    13.9%
+
+12-14 years
+
+    9.7%
+
+15-17 years
+
+    7.5%
+
+18-20 years
+
+    6.3%
+
+21-23 years
+
+    3.4%
+
+24-26 years
+
+    2.4%
+
+27-29 years
+
+    1.4%
+
+30 or more years
+
+    4.7%
+
+59,749 responses; gender categories were select all that apply
+
+We find differences among developers by gender in our survey responses. For example, twice as many women than men have been coding two years or less, evidence for the shifting demographics of coding as a profession. Also, developers who identify as transgender men or women or of non-binary gender contribute to open source at higher rates (58% and 60%, respectively) than developers who identify as men or women overall (45% and 33%.)
+Developer Role and Gender
+The dashed line shows the average ratio of men's to women's participation
+
+We see varying representation by men and women in different developer roles on our survey. All categories have dramatically more developers who identify as men than women but the ratio of men to women varies. Developers who are educators or academic researchers are about 10 times more likely to be men than women, while developers who are system admins or DevOps specialists are 25-30 times more likely to be men than women. Women have the highest representation as academics, QA developers, data scientists, and designers.
+Age
+
+    All Respondents
+    Professional Developers
+
+Under 18 years old
+
+    2.5%
+
+18 - 24 years old
+
+    23.6%
+
+25 - 34 years old
+
+    49.2%
+
+35 - 44 years old
+
+    17.8%
+
+45 - 54 years old
+
+    5.1%
+
+55 - 64 years old
+
+    1.5%
+
+65 years or older
+
+    0.3%
+
+64,574 responses
+
+About three-fourths of professional developers who took our survey are younger than 35.
+Age and Experience by Country
+
+    Average Age
+    Average Years of Coding Experience
+
+Australia
+
+    29.0
+
+United States
+
+    28.7
+
+United Kingdom
+
+    28.2
+
+Canada
+
+    27.7
+
+Germany
+
+    26.6
+
+France
+
+    26.0
+
+Brazil
+
+    25.0
+
+Russian Federation
+
+    24.7
+
+Poland
+
+    24.6
+
+India
+
+    22.7
+
+Mean of 42,042 responses
+
+Developers on Stack Overflow are older with more experience in Australia, countries in Western Europe, and North America and younger with less experience in countries like India and Russia.
+Connection and Competition
+Kinship, Competition, and Self-Evaluation
+I feel a sense of kinship or connection to other developers
+
+    3.6
+
+I think of myself as competing with my peers
+
+    2.7
+
+I'm not as good at programming as most of my peers
+
+    2.2
+
+68,577 responses; agreement on a 1-5 scale, from strongly disagree to strongly agree
+
+We asked how much respondents agree or disagree with several statements about their place in the developer community. Overall 70% of developers agree or strongly agree that they feel a sense of connection with other developers. Developers are overall confident about their own skills compared to their peers, with only 18% agreeing or strongly agreeing that they are not as good at programming as their colleagues.
+Experience and Belonging
+
+Respondents' feelings on how much they belong and how they stack up to their peers change with how much experience they have. More experienced developers feel more connected, more confident, and less competitive. Notice that feeling less skilled drops quickly with experience while feeling less competitive drops more gradually and continues to drop into the second decade of coding experience.
+Life Outside Work
+Children and Other Dependents
+No
+
+    71.1%
+
+Yes
+
+    28.9%
+
+62,596 responses
+
+This year we asked respondents if they have children or other dependents that they care for, and about a quarter of respondents say that they do. We asked in a free response question what these developers do for dependent care during work hours, and our respondents talked about options like school, their spouses/partners, and daycare.
+
+The developers who said they do not have dependents to care for are younger on average than those who do. Over 30% of the developers without dependents are younger than 25, while only 5% of those with dependents are younger than 25. Almost 60% of developers with 10 or more years of professional coding experience have children or other dependents.
+What Time Do Developers Wake Up?
+Before 5:00 AM
+
+    2.4%
+
+Between 5:00 - 6:00 AM
+
+    12.4%
+
+Between 6:01 - 7:00 AM
+
+    28.2%
+
+Between 7:01 - 8:00 AM
+
+    29.5%
+
+Between 8:01 - 9:00 AM
+
+    14.7%
+
+Between 9:01 - 10:00 AM
+
+    4.8%
+
+Between 10:01 - 11:00 AM
+
+    1.4%
+
+Between 11:01 AM - 12:00 PM
+
+    0.5%
+
+After 12:01 PM
+
+    0.4%
+
+I work night shifts
+
+    0.5%
+
+I do not have a set schedule
+
+    5.3%
+
+72,146 responses
+
+We are confident that most developers have pulled a late night here and there, but most of our respondents say they are up by 8am.
+How Much Time Do Developers Spend on a Computer?
+Less than 1 hour
+
+    0.3%
+
+1 - 4 hours
+
+    3.3%
+
+5 - 8 hours
+
+    30.6%
+
+9 - 12 hours
+
+    52.7%
+
+Over 12 hours
+
+    13.2%
+
+72,133 responses
+
+Our respondents include people who code as professionals, students, and hobbyists. The overwhelmingly majority spend large fractions of their waking hours on a typical day with their desktops and laptops.
+How Much Time Do Developers Spend Outside?
+Less than 30 minutes
+
+    15.6%
+
+30 - 59 minutes
+
+    33.3%
+
+1 - 2 hours
+
+    38.6%
+
+3 - 4 hours
+
+    10.0%
+
+Over 4 hours
+
+    2.5%
+
+72,024 responses
+
+Developers get outside for recreation, commuting, or other reasons. About half of our respondents spend an hour or more outside a day.
+Healthy Habits
+
+    How Often Do Developers Skip Meals To Be Productive?
+    How Often Do Developers Exercise?
+
+Never
+
+    63.6%
+
+1 - 2 times per week
+
+    25.2%
+
+3 - 4 times per week
+
+    6.0%
+
+Daily or almost every day
+
+    5.2%
+
+71,946 responses
+
+Developers tell us they do not often skip meals because of their workload, and a majority say they exercise at least some. Over 60% of respondents exercise at least weekly, but the most often chosen exercise frequency is 'never'.
+Technology
+
+The tools of the trade
+Most Popular Technologies
+Programming, Scripting, and Markup Languages
+
+    All Respondents
+    Professional Developers
+
+JavaScript
+
+    71.5%
+
+HTML
+
+    69.4%
+
+CSS
+
+    66.2%
+
+SQL
+
+    58.5%
+
+Java
+
+    45.4%
+
+Bash/Shell
+
+    40.4%
+
+Python
+
+    37.9%
+
+C#
+
+    35.3%
+
+PHP
+
+    31.4%
+
+C++
+
+    24.6%
+
+C
+
+    22.1%
+
+TypeScript
+
+    18.3%
+
+Ruby
+
+    10.3%
+
+Swift
+
+    8.3%
+
+Objective-C
+
+    7.3%
+
+Go
+
+    7.2%
+
+Assembly
+
+    6.9%
+
+VB.NET
+
+    6.9%
+
+R
+
+    6.0%
+
+Matlab
+
+    5.5%
+
+VBA
+
+    4.8%
+
+Kotlin
+
+    4.7%
+
+Groovy
+
+    4.5%
+
+Scala
+
+    4.5%
+
+Perl
+
+    4.2%
+
+73,248 responses; select all that apply
+
+For the sixth year in a row, JavaScript is the most commonly used programming language. Python has risen in the ranks, surpassing C# this year, much like it surpassed PHP last year. Python has a solid claim to being the fastest-growing major programming language.
+
+We see close alignment in the technology choices of professional developers and the developer population overall.
+Frameworks, Libraries, and Tools
+
+    All Respondents
+    Professional Developers
+
+Node.js
+
+    49.6%
+
+Angular
+
+    36.9%
+
+React
+
+    27.8%
+
+.NET Core
+
+    27.2%
+
+Spring
+
+    17.6%
+
+Django
+
+    13.0%
+
+Cordova
+
+    8.5%
+
+TensorFlow
+
+    7.8%
+
+Xamarin
+
+    7.4%
+
+Spark
+
+    4.8%
+
+Hadoop
+
+    4.7%
+
+Torch/PyTorch
+
+    1.7%
+
+51,620 responses; select all that apply
+
+Node.js and AngularJS continue to be the most commonly used technologies in this category, with React and .Net Core also important to many developers.
+Databases
+
+    All Respondents
+    Professional Developers
+
+MySQL
+
+    58.7%
+
+SQL Server
+
+    41.2%
+
+PostgreSQL
+
+    32.9%
+
+MongoDB
+
+    25.9%
+
+SQLite
+
+    19.7%
+
+Redis
+
+    18.0%
+
+Elasticsearch
+
+    14.1%
+
+MariaDB
+
+    13.4%
+
+Oracle
+
+    11.1%
+
+Microsoft Azure (Tables, CosmosDB, SQL, etc)
+
+    7.9%
+
+Google Cloud Storage
+
+    5.5%
+
+Memcached
+
+    5.5%
+
+Amazon DynamoDB
+
+    5.2%
+
+Amazon RDS/Aurora
+
+    5.1%
+
+Cassandra
+
+    3.7%
+
+IBM Db2
+
+    2.5%
+
+Neo4j
+
+    2.4%
+
+Amazon Redshift
+
+    2.2%
+
+Apache Hive
+
+    2.2%
+
+Google BigQuery
+
+    2.1%
+
+Apache HBase
+
+    1.7%
+
+66,264 responses; select all that apply
+
+Like last year, MySQL and SQL Server are the most commonly used databases.
+Platforms
+
+    All Respondents
+    Professional Developers
+
+Linux
+
+    48.3%
+
+Windows Desktop or Server
+
+    35.4%
+
+Android
+
+    29.0%
+
+AWS
+
+    24.1%
+
+Mac OS
+
+    17.9%
+
+Raspberry Pi
+
+    15.9%
+
+WordPress
+
+    15.9%
+
+iOS
+
+    15.5%
+
+Firebase
+
+    14.5%
+
+Azure
+
+    11.0%
+
+Arduino
+
+    10.6%
+
+Heroku
+
+    10.5%
+
+Google Cloud Platform/App Engine
+
+    8.0%
+
+Serverless
+
+    4.5%
+
+Drupal
+
+    3.0%
+
+Amazon Echo
+
+    2.9%
+
+Windows Phone
+
+    2.7%
+
+SharePoint
+
+    2.7%
+
+ESP8266
+
+    2.2%
+
+Salesforce
+
+    2.2%
+
+Apple Watch or Apple TV
+
+    1.9%
+
+IBM Cloud or Watson
+
+    1.4%
+
+Google Home
+
+    1.4%
+
+Gaming console
+
+    1.3%
+
+Mainframe
+
+    0.8%
+
+65,999 responses; select all that apply
+
+Linux and Windows Desktop or Server are the most common choices that our respondents say they have done development work for this year.
+Most Loved, Dreaded, and Wanted
+Most Loved, Dreaded, and Wanted Languages
+
+    Loved
+    Dreaded
+    Wanted
+
+Rust
+
+    78.9%
+
+Kotlin
+
+    75.1%
+
+Python
+
+    68.0%
+
+TypeScript
+
+    67.0%
+
+Go
+
+    65.6%
+
+Swift
+
+    65.1%
+
+JavaScript
+
+    61.9%
+
+C#
+
+    60.4%
+
+F#
+
+    59.6%
+
+Clojure
+
+    59.6%
+
+Bash/Shell
+
+    59.1%
+
+Scala
+
+    58.5%
+
+SQL
+
+    57.5%
+
+HTML
+
+    55.7%
+
+CSS
+
+    55.1%
+
+Haskell
+
+    53.6%
+
+Julia
+
+    52.8%
+
+Java
+
+    50.7%
+
+R
+
+    49.4%
+
+Ruby
+
+    47.4%
+
+Erlang
+
+    47.2%
+
+C++
+
+    46.7%
+
+Hack
+
+    42.1%
+
+PHP
+
+    41.6%
+
+Ocaml
+
+    41.5%
+
+% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it
+
+For the third year in a row, Rust is the most loved programming language among our respondents, followed close behind by Kotlin, a language we asked about for the first time on our survey this year. This means that proportionally, more developers want to continue working with these than other languages.
+
+Also for the third year in a row, Visual Basic 6 ranks as the most dreaded programming language. Most dreaded means that a high percentage of developers who are currently using the technology express no interest in continuing to do so.
+
+Python is the most wanted language for the second year in a row, meaning that it is the language that developers who do not yet use it most often say they want to learn.
+Most Loved, Dreaded, and Wanted Frameworks, Libraries, and Tools
+
+    Loved
+    Dreaded
+    Wanted
+
+TensorFlow
+
+    73.5%
+
+React
+
+    69.4%
+
+Torch/PyTorch
+
+    68.0%
+
+Node.js
+
+    66.4%
+
+.NET Core
+
+    66.0%
+
+Spark
+
+    66.0%
+
+Spring
+
+    60.0%
+
+Django
+
+    58.3%
+
+Angular
+
+    54.6%
+
+Hadoop
+
+    53.9%
+
+Xamarin
+
+    49.0%
+
+Cordova
+
+    40.4%
+
+% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it
+
+TensorFlow, one of the fastest growing technologies on Stack Overflow, is most loved by developers, while Cordova is most dreaded. React is the framework developers say they most want to work with if they do not already.
+Most Loved, Dreaded, and Wanted Databases
+
+    Loved
+    Dreaded
+    Wanted
+
+Redis
+
+    64.5%
+
+PostgreSQL
+
+    62.0%
+
+Elasticsearch
+
+    59.9%
+
+Amazon RDS/Aurora
+
+    58.8%
+
+Microsoft Azure (Tables, CosmosDB, SQL, etc)
+
+    56.7%
+
+Google Cloud Storage
+
+    56.5%
+
+MongoDB
+
+    55.1%
+
+MariaDB
+
+    53.3%
+
+Google BigQuery
+
+    52.4%
+
+SQL Server
+
+    51.6%
+
+Amazon DynamoDB
+
+    50.9%
+
+Neo4j
+
+    49.7%
+
+MySQL
+
+    48.7%
+
+SQLite
+
+    48.1%
+
+Cassandra
+
+    46.4%
+
+Apache Hive
+
+    46.2%
+
+Amazon Redshift
+
+    44.8%
+
+Apache HBase
+
+    43.6%
+
+Memcached
+
+    42.2%
+
+Oracle
+
+    36.9%
+
+IBM Db2
+
+    21.8%
+
+% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it
+
+For the second year in a row, Redis is most loved database, meaning that proportionally more developers wanted to continue working with it than any other database. IBM's Db2 offering ranks as the most dreaded database, and for the second year in a row, MongoDB is the most wanted database.
+Most Loved, Dreaded, and Wanted Platforms
+
+    Loved
+    Dreaded
+    Wanted
+
+Linux
+
+    76.5%
+
+Serverless
+
+    75.2%
+
+AWS
+
+    68.6%
+
+Raspberry Pi
+
+    67.7%
+
+ESP8266
+
+    67.4%
+
+iOS
+
+    64.6%
+
+Apple Watch or Apple TV
+
+    64.0%
+
+Mac OS
+
+    63.9%
+
+Firebase
+
+    63.8%
+
+Android
+
+    63.8%
+
+Google Cloud Platform/App Engine
+
+    62.5%
+
+Gaming console
+
+    61.3%
+
+Windows Desktop or Server
+
+    61.2%
+
+Azure
+
+    61.0%
+
+Arduino
+
+    58.1%
+
+Google Home
+
+    57.6%
+
+Amazon Echo
+
+    53.2%
+
+Heroku
+
+    52.2%
+
+IBM Cloud or Watson
+
+    43.7%
+
+Predix
+
+    39.1%
+
+WordPress
+
+    36.8%
+
+Windows Phone
+
+    31.2%
+
+Mainframe
+
+    31.1%
+
+Salesforce
+
+    30.3%
+
+Drupal
+
+    29.6%
+
+% of developers who are developing with the language or technology and have expressed interest in continuing to develop with it
+
+Linux is once again the most loved platform for development, with serverless infrastructure also loved this year. Sharepoint is the most dreaded development platform for the second year in a row, and many developers say they want to start developing for the Android platform and the Raspberry Pi.
+Development Environments and Tools
+Most Popular Development Environments
+
+    All Respondents
+    Web Developers
+    Mobile Developers
+    Sysadmin/DevOps
+
+Visual Studio Code
+
+    34.9%
+
+Visual Studio
+
+    34.3%
+
+Notepad++
+
+    34.2%
+
+Sublime Text
+
+    28.9%
+
+Vim
+
+    25.8%
+
+IntelliJ
+
+    24.9%
+
+Android Studio
+
+    19.3%
+
+Eclipse
+
+    18.9%
+
+Atom
+
+    18.0%
+
+PyCharm
+
+    12.0%
+
+Xcode
+
+    10.6%
+
+PHPStorm
+
+    9.0%
+
+NetBeans
+
+    8.2%
+
+IPython / Jupyter
+
+    7.4%
+
+Emacs
+
+    4.1%
+
+RStudio
+
+    3.3%
+
+RubyMine
+
+    1.6%
+
+TextMate
+
+    1.1%
+
+Coda
+
+    0.6%
+
+Komodo
+
+    0.6%
+
+Zend
+
+    0.4%
+
+Light Table
+
+    0.2%
+
+75,398 responses; select all that apply
+
+Visual Studio Code just edged out Visual Studio as the most popular developer environment tool across the board, but there are differences in tool choices by developer type and role. Developers who write code for mobile apps are more likely to choose Android Studio and Xcode, the most popular choice by DevOps and sysadmins is Vim, and data scientists are more likely to work in IPython/Jupyter, PyCharm, and RStudio.
+Developers' Primary Operating Systems
+
+    All Respondents
+    Professional Developers
+
+Windows
+
+    49.9%
+
+MacOS
+
+    26.7%
+
+Linux-based
+
+    23.2%
+
+BSD/Unix
+
+    0.2%
+
+76,179 responses
+
+We asked our respondents what operating systems they use for work. About half said they mainly use Windows, and the remainder were about evenly split between MacOS and Linux.
+How Many Monitors?
+1
+
+    31.9%
+
+2
+
+    51.1%
+
+3
+
+    14.4%
+
+4
+
+    1.2%
+
+More than 4
+
+    1.4%
+
+76,398 responses
+
+Over 65% of respondents use two or more monitors to get work done at their main workstation; the median number of monitors for respondents at their main workstation is two.
+Top Paying Technologies
+What Languages Are Associated with the Highest Salaries Worldwide?
+
+    Global
+    United States
+
+F#
+
+    $74,000
+
+Ocaml
+
+    $73,000
+
+Clojure
+
+    $72,000
+
+Groovy
+
+    $72,000
+
+Perl
+
+    $69,000
+
+Rust
+
+    $69,000
+
+Erlang
+
+    $67,000
+
+Scala
+
+    $67,000
+
+Go
+
+    $66,000
+
+Ruby
+
+    $64,000
+
+Bash/Shell
+
+    $63,000
+
+CoffeeScript
+
+    $60,000
+
+Haskell
+
+    $60,000
+
+Julia
+
+    $60,000
+
+TypeScript
+
+    $60,000
+
+C#
+
+    $59,000
+
+Objective-C
+
+    $58,000
+
+R
+
+    $58,000
+
+Swift
+
+    $57,000
+
+Lua
+
+    $56,000
+
+Python
+
+    $56,000
+
+SQL
+
+    $56,000
+
+JavaScript
+
+    $55,000
+
+HTML
+
+    $54,000
+
+CSS
+
+    $53,000
+
+Median of 56,835 responses; USD
+
+Globally, respondents who use F#, Ocaml, Clojure, and Groovy earn the highest salaries, with median salaries above $70,000 USD. There are regional variations in which languages are associated with the highest pay. Erlang and Scala developers in the US are among the highest paid, while Clojure, Erlang, and Haskell developers earn the most in India.
+Correlated Technologies
+How Technologies Are Connected
+
+Technologies cluster together into related ecosystems that tend to be used by the same developers. In this chart we see a large central cluster for web development (with JavaScript, HTML, and CSS) connected via SQL to one for Microsoft technologies (with C#, Visual Studio, and .NET Core). Along the left we see a constellation connecting Java, Android, and iOS across to Linux, bash/shell, and Python. Other smaller correlated clusters include Scala/Spark, C/C++, and other smaller technologies that include language-specific IDEs.
+Technology and Society
+What Do Developers Think Is Dangerous and Exciting About AI?
+
+    Dangerous
+    Exciting
+
+Algorithms making important decisions
+
+    28.6%
+
+Artificial intelligence surpassing human intelligence ("the singularity")
+
+    28.0%
+
+Evolving definitions of "fairness" in algorithmic versus human decisions
+
+    23.7%
+
+Increasing automation of jobs
+
+    19.8%
+
+63,115 responses
+
+Some types of developers are involved in the increasing role of machine learning and artificial intelligence in the world today, so we asked developers what they think is dangerous and exciting about these technologies. There is not much consensus among developers about what is most dangerous; each answer was chosen roughly equally. The top choice for what is exciting about increasing AI is that jobs can be automated.
+Who is Primarily Responsible for Considering the Ramifications of AI?
+The developers or the people creating the AI
+
+    47.8%
+
+A governmental or other regulatory body
+
+    27.9%
+
+Prominent industry leaders
+
+    16.6%
+
+Nobody
+
+    7.7%
+
+65,553 responses
+
+Developers are most likely to think that the creators and technologists behind the machine learning and AI algorithms are the ones who are ultimately most responsible for the societal issues surrounding artificial intelligence. About a quarter of respondents think that a regulatory body should be primarily responsible.
+How Do Developers Feel About the Future of AI?
+I'm excited about the possibilities more than worried about the dangers.
+
+    72.8%
+
+I'm worried about the dangers more than I'm excited about the possibilities.
+
+    19.0%
+
+I don't care about it, or I haven't thought about it.
+
+    8.2%
+
+69,728 responses
+
+Developers are mostly optimistic about the possibilities that artificial intelligence offers our world, with almost three-fourths of respondents saying that they are overall more excited than worried about the AI future.
+AI Concerns by Developer Type
+
+The concerns that developers bring to issues around artificial intelligence depend on the kind of coding work they do. For example, data scientists are 1.5 times more likely to consider issues around algorithmic fairness dangerous than any upcoming singularity when computers become more intelligent than people, the most of any kind of developer. We included a free response option on this question; there was not much serious worry about Skynet, but many developers discussed systemic bias being built into algorithmic decision making and the danger of AI being used without the ability to inspect and reason about decision pathways.
+Work
+
+How developers get down to the business of software
+Employment
+Employment Status
+
+    All Respondents
+    Professional Developers
+
+Employed full-time
+
+    74.0%
+
+Independent contractor, freelancer, or self-employed
+
+    9.7%
+
+Not employed, but looking for work
+
+    6.1%
+
+Employed part-time
+
+    5.6%
+
+Not employed, and not looking for work
+
+    4.3%
+
+Retired
+
+    0.2%
+
+95,321 responses
+
+Over 90% of developers are employed at least part-time.
+Employment Status by Geography
+
+    United States
+    India
+    United Kingdom
+    Germany
+    Canada
+
+Employed full-time
+
+    80.4%
+
+Independent contractor, freelancer, or self-employed
+
+    6.6%
+
+Not employed, but looking for work
+
+    4.8%
+
+Employed part-time
+
+    4.4%
+
+Not employed, and not looking for work
+
+    3.6%
+
+Retired
+
+    0.4%
+
+19,948 responses
+
+Germany has an unusually high proportion of developers working part-time. Developers in the United States are somewhat less likely to work as independent contractors or freelancers. In all of these locations, between 70% and 80% of developers are employed full-time.
+Employment Status for Professional Developers by Geography
+
+    United States
+    India
+    United Kingdom
+    Germany
+    Canada
+
+Employed full-time
+
+    83.2%
+
+Independent contractor, freelancer, or self-employed
+
+    6.6%
+
+Not employed, but looking for work
+
+    4.1%
+
+Employed part-time
+
+    3.5%
+
+Not employed, and not looking for work
+
+    2.3%
+
+Retired
+
+    0.3%
+
+18,435 responses
+
+Respondents who are professional developers are employed full-time at higher rates than respondents in general.
+
+Looking for a new development job? Check out Stack Overflow Jobs.
+Company Type
+Industry
+
+    All Respondents
+    Professional Developers
+
+Web development or design
+
+    16.0%
+
+Other industry not listed here
+
+    11.6%
+
+Information technology
+
+    10.8%
+
+Software as a service (SaaS) development
+
+    10.3%
+
+Other software development
+
+    9.9%
+
+Financial technology or services
+
+    8.7%
+
+Cloud-based solutions or services
+
+    7.1%
+
+Data and analytics
+
+    5.7%
+
+Consulting
+
+    5.3%
+
+Media, advertising, publishing, or entertainment
+
+    5.1%
+
+Retail or eCommerce
+
+    5.0%
+
+Healthcare technology or services
+
+    4.5%
+
+82,114 responses
+
+Software developers work in a diverse range of industries (so diverse that it's hard to ask about them all in one question!) both inside and outside the technology industry. Our answer choices focused on the tech industry this year, and of these choices, more professional developers work for companies doing web development, IT, and SaaS. Developers working in industries such as consulting and healthcare have more years of professional coding experience. Developers in these industries are twice as likely to have more than 20 years of experience than developers working in web development/design or eCommerce.
+Company Size
+Fewer than 10 employees
+
+    10.5%
+
+10 to 19 employees
+
+    11.2%
+
+20 to 99 employees
+
+    23.8%
+
+100 to 499 employees
+
+    19.6%
+
+500 to 999 employees
+
+    6.5%
+
+1,000 to 4,999 employees
+
+    10.7%
+
+5,000 to 9,999 employees
+
+    4.2%
+
+10,000 or more employees
+
+    13.6%
+
+71,531 responses
+
+Developers work in companies of all sizes, from quite small to large enterprise organizations. More software developers in the United States work at larger companies compared to the rest of the world. The more experienced a developer is, the more likely they are to work at one of the largest companies. A developer with 30 years of experience is twice as likely to work at a company with more than 5,000 employees than a developer with 2 years of experience.
+Career Values
+What Do Developers Hope To Be Doing in Five Years?
+Working in a different or more specialized technical role than the one I'm in now
+
+    33.9%
+
+Working as a founder or co-founder of my own company
+
+    25.7%
+
+Doing the same work
+
+    19.4%
+
+Working as an engineering manager or other functional manager
+
+    9.9%
+
+Working as a product manager or project manager
+
+    6.6%
+
+Working in a career completely unrelated to software development
+
+    2.8%
+
+Retirement
+
+    1.7%
+
+75,718 responses
+
+Developers' career goals are largely focused on technical work, with just over half of respondents saying they want to be in the same or a different technical role in the future. About a quarter of our respondents say they want to start their own company, but this is most common among developers who are younger than 25 years old.
+How Do Developers Feel About Their Careers and Jobs?
+
+    Career Satisfication
+    Job Satisfaction
+
+Extremely dissatisfied
+
+    3.4%
+
+Moderately dissatisfied
+
+    6.9%
+
+Slightly dissatisfied
+
+    8.6%
+
+Neither satisfied nor dissatisfied
+
+    8.3%
+
+Slightly satisfied
+
+    17.6%
+
+Moderately satisfied
+
+    36.5%
+
+Extremely satisfied
+
+    18.7%
+
+76,504 responses
+
+Developers tend to be more satisfied with their career than with their current job. Overall, career satisfaction does not vary significantly by industry. However, current job satisfaction is significantly lower for developers working in financial services and IT. Career satisfaction is highest for older developers, with ages of 50 or higher, and those with 20, 30, or more years of professional experience. Job satisfaction, by contrast, is highest for developers between 35 and 44 years old.
+Ethics
+What Would Developers Do If Asked to Write Code for an Unethical Purpose?
+No
+
+    58.5%
+
+Depends on what it is
+
+    36.6%
+
+Yes
+
+    4.8%
+
+70,782 responses
+
+When posed with a hypothetical situation where they are asked to write code for a product or purpose that they consider clearly unethical, over half of our respondents say that they would not write such code. Ethical situations can be complicated, and about another third say that it would depend on the situation.
+How Would Developers Report Ethical Problems with Code?
+Depends on what it is
+
+    46.6%
+
+Yes, but only within the company
+
+    35.7%
+
+Yes, and publicly
+
+    13.1%
+
+No
+
+    4.6%
+
+70,426 responses
+
+The question of what to do next after an ethical problem has arisen is even more tricky, according to our respondents. The most common answer, from almost half of respondents, is that how to report an ethical problem depends on the particulars of any given situation.
+Who Is Ultimately Most Responsible for Code That Accomplishes Something Unethical?
+Upper management at the company/organization
+
+    57.5%
+
+The person who came up with the idea
+
+    22.8%
+
+The developer who wrote it
+
+    19.7%
+
+64,540 responses
+
+Most developers feel that management is ultimately most accountable for unethical results of code. Just under 20% of respondents said that a developer who writes code used for unethical purposes is most responsible.
+Do Developers Have an Obligation to Consider the Ethical Implications of Their Code?
+Yes
+
+    79.6%
+
+Unsure / I don't know
+
+    14.3%
+
+No
+
+    6.1%
+
+69,309 responses
+
+Almost 80% of respondents affirm that considering what their code can be used for is the right thing for developers to do. Those who said they were unsure about this were 40% more likely to also say that they do not need to report any ethical problems.
+
+We included a free response opportunity after this question, and we saw thoughtful reflections from developers. These include responses about how the tools developers build are powerful and come with a lot of responsibility, situations where unethical outcomes may accidentally arise, and how large teams are involved in building software but developers can be the last line of defense against unethical code.
+Looking for a Job
+Job Search Status
+I’m not actively looking, but I am open to new opportunities
+
+    59.8%
+
+I am not interested in new job opportunities
+
+    24.3%
+
+I am actively looking for a job
+
+    15.9%
+
+79,488 responses
+
+Only 16% of respondents are actively looking for a job, but about three-fourths of developers are interested in hearing about new job opportunities.
+Job Search Status by Geography
+
+    United States
+    India
+    United Kingdom
+    Germany
+    Canada
+
+I’m not actively looking, but I am open to new opportunities
+
+    56.4%
+
+I am not interested in new job opportunities
+
+    29.4%
+
+I am actively looking for a job
+
+    14.2%
+
+17,706 responses
+
+Job seeking status is largely consistent across these regions.
+Who's Actively Looking for a Job?
+Educator or academic researcher
+
+    18.5%
+
+Mobile developer
+
+    18.1%
+
+Data scientist or machine learning specialist
+
+    18.0%
+
+Data or business analyst
+
+    17.9%
+
+Game or graphics developer
+
+    17.9%
+
+Designer
+
+    17.7%
+
+Front-end developer
+
+    16.0%
+
+Database administrator
+
+    15.6%
+
+Back-end developer
+
+    15.4%
+
+QA or test developer
+
+    15.3%
+
+Full-stack developer
+
+    15.2%
+
+Embedded applications or devices developer
+
+    14.8%
+
+System administrator
+
+    14.5%
+
+Desktop or enterprise applications developer
+
+    14.4%
+
+Engineering manager
+
+    13.6%
+
+DevOps specialist
+
+    13.5%
+
+Product manager
+
+    13.0%
+
+C-suite executive (CEO, CTO, etc.)
+
+    12.0%
+
+Mean of 76,354 responses
+
+Among professional developers, those who work at the C-level and as engineering managers or product managers are looking for work the least. Developers working in academia and data scientists (categories that we know often overlap) are looking for work at higher proportions.
+How Long Ago Did Developers Last Change Jobs?
+Less than a year ago
+
+    34.6%
+
+Between 1 and 2 years ago
+
+    22.0%
+
+Between 2 and 4 years ago
+
+    18.8%
+
+More than 4 years ago
+
+    18.9%
+
+I've never had a job
+
+    5.8%
+
+78,889 responses
+
+About half of the respondents on our survey have taken a new job within the past two years; frequent job changes are the norm for software developers.
+Job Change Timelines by Geography
+
+    United States
+    India
+    United Kingdom
+    Germany
+    Canada
+
+Less than a year ago
+
+    31.3%
+
+Between 1 and 2 years ago
+
+    20.9%
+
+Between 2 and 4 years ago
+
+    21.1%
+
+More than 4 years ago
+
+    23.8%
+
+I've never had a job
+
+    3.0%
+
+17,633 responses
+
+Across the US, UK, Germany, and Canada, software developers change jobs at about the same rates.
+What Words Do Developers Use to Describe Searching for a Job?
+
+    Annoying
+    Exhausting
+    Interesting
+    Exciting
+
+job
+
+    19.8%
+
+interview
+
+    13.3%
+
+recruiter
+
+    12.3%
+
+company
+
+    9.8%
+
+time
+
+    6.6%
+
+finding
+
+    5.0%
+
+salary
+
+    4.3%
+
+getting
+
+    4.2%
+
+process
+
+    3.5%
+
+information
+
+    3.4%
+
+application
+
+    3.3%
+
+employer
+
+    3.2%
+
+lack
+
+    3.2%
+
+experience
+
+    3.1%
+
+work
+
+    3.1%
+
+resume
+
+    2.9%
+
+response
+
+    2.9%
+
+waiting
+
+    2.9%
+
+offer
+
+    2.7%
+
+people
+
+    2.7%
+
+25,022 responses; % of respondents who used each word
+
+We asked developers on Stack Overflow what they find annoying, exhausting, interesting, and exciting about the process of searching for a new job in separate free response questions. Respondents said the positive aspects of searching for a new job include the new opportunities, technologies, and people that a new position can offer. On the other hand, they expressed frustration with broken processes around interviews and recruiting.
+Job Priorities
+How Do Developers Assess Potential Jobs?
+
+    Highest Priority
+    Lowest Priority
+
+The compensation and benefits offered
+
+    18.3%
+
+The languages, frameworks, and other technologies I'd be working with
+
+    17.3%
+
+Opportunities for professional development
+
+    16.0%
+
+The office environment or company culture
+
+    13.6%
+
+The opportunity to work from home/remotely
+
+    10.3%
+
+The industry that I'd be working in
+
+    7.4%
+
+How widely used or impactful the product or service I'd be working on is
+
+    6.5%
+
+The specific department or team I'd be working on
+
+    5.5%
+
+The financial performance or funding status of the company or organization
+
+    3.4%
+
+The diversity of the company or organization
+
+    1.6%
+
+66,985 responses; % of respondents who chose each option as their highest priority
+
+In general, developers' top priority in assessing a job is compensation, followed by the specific technologies that they will work with. The tech industry is struggling overall with issues around diversity, and individual developers are not making it a priority when looking for a job.
+Differences in Assessing Jobs by Gender
+
+    Men
+    Women
+    Non-binary
+
+The compensation and benefits offered
+
+    19.0%
+
+The languages, frameworks, and other technologies I'd be working with
+
+    17.6%
+
+Opportunities for professional development
+
+    15.7%
+
+The office environment or company culture
+
+    13.5%
+
+The opportunity to work from home/remotely
+
+    10.3%
+
+The industry that I'd be working in
+
+    7.3%
+
+How widely used or impactful the product or service I'd be working on is
+
+    6.6%
+
+The specific department or team I'd be working on
+
+    5.5%
+
+The financial performance or funding status of the company or organization
+
+    3.3%
+
+The diversity of the company or organization
+
+    1.3%
+
+54,536 responses; % of respondents who chose each option as their highest priority
+
+Different types of developers apply different sets of priorities when considering jobs. Developers who belong to gender minorities in tech rank the company culture and office environment as their highest concern when assessing a new job. The gender identification question allowed respondents to select all that apply.
+What Developers Value in Compensation and Benefits
+
+    Highest Priority
+    Lowest Priority
+
+Salary and/or bonuses
+
+    70.2%
+
+Health insurance
+
+    8.6%
+
+Computer/office equipment allowance
+
+    4.7%
+
+Conference or education budget
+
+    3.6%
+
+Stock options or shares
+
+    3.2%
+
+Retirement or pension savings matching
+
+    2.1%
+
+Parental leave
+
+    2.0%
+
+Fitness or wellness benefit (ex. gym membership, nutritionist)
+
+    1.5%
+
+Transportation benefit (ex. company-provided transportation, public transit allowance)
+
+    1.5%
+
+Company-provided meals or snacks
+
+    1.4%
+
+Childcare benefit
+
+    1.1%
+
+64,918 responses; % of respondents who chose each option as their highest priority
+
+Overall, respondents on our survey prioritize salary highest, with all other considerations like computer equipment and conference budgets ranking much lower.
+Valuing Compensation and Benefits by Geography
+
+    United States
+    India
+    United Kingdom
+    Germany
+    Canada
+
+Salary and/or bonuses
+
+    78.2%
+
+Health insurance
+
+    11.5%
+
+Retirement or pension savings matching
+
+    2.4%
+
+Stock options or shares
+
+    2.3%
+
+Computer/office equipment allowance
+
+    1.7%
+
+Conference or education budget
+
+    1.0%
+
+Parental leave
+
+    1.0%
+
+Company-provided meals or snacks
+
+    0.6%
+
+Transportation benefit (ex. company-provided transportation, public transit allowance)
+
+    0.4%
+
+Childcare benefit
+
+    0.4%
+
+Fitness or wellness benefit (ex. gym membership, nutritionist)
+
+    0.4%
+
+15,782 responses; % of respondents who chose each option as their highest priority
+
+The specifics of how developers are compensated with salary and benefits work differently across the world, so developer responses vary by geography. Health insurance is prioritized in countries without a national healthcare system (like the United States), and computer equipment allowances are unusually important to developers in India and the UK.
+Development Practices
+What Do Developers Use to Stay Comfortable While Working?
+Ergonomic keyboard or mouse
+
+    52.2%
+
+Standing desk
+
+    50.4%
+
+Wrist/hand supports or braces
+
+    22.4%
+
+Fatigue-relieving floor mat
+
+    12.4%
+
+34,058 responses; select all that apply
+
+Standing desks are not confined to trendy Silicon Valley offices; over half of our respondents say they use one, almost the same proportion who use a device like an ergonomic keyboard or mouse.
+Which Methodologies Do Developers Use?
+
+    All Respondents
+    Professional Developers
+
+Agile
+
+    85.4%
+
+Scrum
+
+    62.7%
+
+Kanban
+
+    35.2%
+
+Pair programming
+
+    28.4%
+
+Extreme programming (XP)
+
+    15.7%
+
+Formal standard such as ISO 9001 or IEEE 12207 (aka “waterfall” methodologies)
+
+    15.1%
+
+Lean
+
+    9.6%
+
+Evidence-based software engineering
+
+    3.5%
+
+Mob programming
+
+    3.3%
+
+PRINCE2
+
+    1.5%
+
+58,981 responses; select all that apply
+
+Agile and Scrum are popular methodologies for developers to keep their projects on track.
+How Long Do Developers Expect New Coworkers to Take to Be Productive?
+Less than a month
+
+    30.0%
+
+One to three months
+
+    44.7%
+
+Three to six months
+
+    17.4%
+
+Six to nine months
+
+    5.1%
+
+Nine months to a year
+
+    1.7%
+
+More than a year
+
+    1.2%
+
+51,872 responses
+
+We asked our respondents to imagine they had a new coworker with four years of relevant experience joining their team, and then to estimate how long that person would take to become fully productive and contribute at a typical level. About three-fourths of developers thought that the hypothetical new coworker would be fully up to speed within three months or less. Looking to reduce tribal knowledge, onboard faster, and speed up development? Learn more about Stack Overflow Enterprise.
+Version Control
+
+    All Respondents
+    Professional Developers
+
+Git
+
+    87.2%
+
+Subversion
+
+    16.1%
+
+Team Foundation Version Control
+
+    10.9%
+
+Zip file back-ups
+
+    7.9%
+
+Copying and pasting files to network shares
+
+    7.9%
+
+I don't use version control
+
+    4.8%
+
+Mercurial
+
+    3.6%
+
+74,298 responses; select all that apply
+
+Git is the dominant choice for version control for developers today, with almost 90% of developers checking in their code via Git.
+How Often Do Developers Check In Code?
+
+    All Respondents
+    Professional Developers
+
+Multiple times per day
+
+    60.2%
+
+A few times per week
+
+    19.1%
+
+Once a day
+
+    9.1%
+
+Weekly or a few times per month
+
+    6.9%
+
+Less than once per month
+
+    3.2%
+
+Never
+
+    1.5%
+
+72,355 responses
+
+The majority of developers check in code multiple times per day. Professional developers are less likely to check in code rarely or never.
+How are Job Satisfaction and Committing Code Related?
+Multiple times per day
+
+    5.14
+
+Once a day
+
+    4.98
+
+A few times per week
+
+    4.94
+
+Never
+
+    4.82
+
+Weekly or a few times per month
+
+    4.79
+
+Less than once per month
+
+    4.73
+
+Mean of 59,260 responses; satisfaction on a 1-7 scale, from extremely dissatisfied to extremely satisfied
+
+Developers who check in code the most often also have higher job satisfaction.
+Salary
+Salary by Developer Type
+
+    Global
+    United States
+
+Engineering manager
+
+    $89,000
+
+DevOps specialist
+
+    $72,000
+
+Data scientist or machine learning specialist
+
+    $60,000
+
+Data or business analyst
+
+    $59,000
+
+Embedded applications or devices developer
+
+    $59,000
+
+Full-stack developer
+
+    $59,000
+
+Desktop or enterprise applications developer
+
+    $57,000
+
+Back-end developer
+
+    $56,000
+
+System administrator
+
+    $56,000
+
+QA or test developer
+
+    $55,000
+
+Database administrator
+
+    $51,000
+
+Front-end developer
+
+    $51,000
+
+Designer
+
+    $46,000
+
+Educator or academic researcher
+
+    $44,000
+
+Mobile developer
+
+    $43,000
+
+Game or graphics developer
+
+    $40,000
+
+Median of 57,183 responses; USD
+
+Engineering managers, DevOps specialists, and data scientists command the highest salaries. See our Methodology section for information on how we converted local currencies used by respondents to U.S. dollars.
+
+Average top earners vary by geography. In India, for example, data scientists are among the top earners, while in European countries, back-end developers and developers working with embedded devices are among the top earners.
+Salary and Experience by Developer Type
+
+Naturally, developers with more years of experience are paid more. However, we also see that some type of coding work is paid more highly at the same level of experience. Data scientists and DevOps specialists are high earners for their level of experience.
+Salary and Experience by Language
+
+Developers using languages that appear above the line in this chart, such as Go, Clojure, and F#, are being paid more even given how much experience they have. Developers using languages below the line, like PHP and Visual Basic 6, however, are paid less even given years of experience. The size of the circles in this chart represents how many developers are using that language compared to the others.
+
+Looking to hire developers? Learn how with Stack Overflow Talent.
+Community
+
+Where developers come to learn, share knowledge, and build their careers
+Site Use
+Visiting Stack Overflow
+I have never visited Stack Overflow (before today)
+
+    0.5%
+
+Less than once per month or monthly
+
+    2.0%
+
+A few times per month or weekly
+
+    11.5%
+
+A few times per week
+
+    22.4%
+
+Daily or almost daily
+
+    32.5%
+
+Multiple times per day
+
+    31.1%
+
+76,811 responses
+
+Developers visit Stack Overflow. A lot. Over 85% of respondents visit Stack Overflow at least a few times per week, with over half visiting every day. Our respondents also feel very positively about Stack Overflow. We asked a traditional net promoter score question for Stack Overflow as a whole and our NPS is 75, a world class score according to benchmarks.
+How Many Participants Have a Stack Overflow Account?
+Yes
+
+    87.4%
+
+No
+
+    8.8%
+
+I'm not sure / I can't remember
+
+    3.8%
+
+76,791 responses
+
+Almost 90% of the participants in our survey are registered users with accounts.
+Sharing What You've Built in Your Developer Story
+No, and I don't know what that is
+
+    36.6%
+
+No, I know what it is but I don't have one
+
+    23.7%
+
+No, I have one but it's out of date
+
+    23.0%
+
+Yes
+
+    16.7%
+
+65,677 responses
+
+Almost 40% of respondents have a Developer Story here on Stack Overflow. You can create your own Developer Story to show off what you've built.
+How Often Do Developers Participate on Stack Overflow?
+I have never participated in Q&A on Stack Overflow
+
+    17.3%
+
+Less than once per month or monthly
+
+    39.2%
+
+A few times per month or weekly
+
+    22.6%
+
+A few times per week
+
+    11.7%
+
+Daily or almost daily
+
+    5.9%
+
+Multiple times per day
+
+    3.2%
+
+65,740 responses
+
+Some developers come to Stack Overflow only to find answers to their questions, while others participate in the community by asking, answering, voting for, or commenting on questions. Over 40% of survey respondents participate on Stack Overflow a few times per month or more often. Interested in a place for you and your technical team to ask and answer questions in a secure environment? Learn more about Stack Overflow for Teams.
+Developer Opinions on Ads
+How Do Developers Feel About Ads?
+I enjoy seeing online updates from companies that I like
+
+    3.4
+
+Online advertising can be valuable when it is relevant to me
+
+    3.3
+
+I fundamentally dislike the concept of advertising
+
+    3.2
+
+74,710 responses; agreement on a 1-5 scale, from strongly disagree to strongly agree
+
+Like many websites, Stack Overflow has ads, and we want to know how to make our ads more relevant for our users. Over half of our respondents agreed or strongly agreed that they enjoy seeing online updates from companies they like and that online advertising can be valuable when it is relevant. About 40% of developers say they fundamentally dislike the concept of advertising.
+Ad Priorities for Developers
+
+    Highest Priority
+    Lowest Priority
+
+The advertisement is relevant to me
+
+    38.8%
+
+The advertisement provides useful information
+
+    14.1%
+
+The advertisement seems trustworthy
+
+    13.8%
+
+The advertisement is honest about its goals
+
+    12.9%
+
+The advertisement is from a company that I like
+
+    9.2%
+
+The advertisement avoids fluffy or vague language
+
+    6.0%
+
+The advertisement offers something of value, like a free trial
+
+    5.1%
+
+60,479 responses; % of respondents who chose each option as their highest priority
+
+In general, developers' top priority in assessing an advertisement is whether it's relevant to them, followed by whether it provides useful information and is trustworthy. Developers are not swayed by free offers in advertisements.
+
+Looking to advertise to developers? Learn more with Stack Overflow Ads.
+Engaging Together
+Do Developers Consider Themselves Part of the Stack Overflow Community?
+
+    Overall
+    By Gender
+
+Yes
+
+    55.5%
+
+No
+
+    22.4%
+
+I'm not sure
+
+    22.2%
+
+76,007 responses
+
+Most of the respondents to our survey consider themselves part of our community, but this varies for different groups of people. For example, we find that respondents who identify as male see themselves as part of the community at higher rates than those with other gender identities. The tech community as a whole, and we at Stack Overflow in particular, still have work to do in this area.
+Interest in Hypothetical New Tools on Stack Overflow
+An employer or job review system
+
+    3.2
+
+An area for Q&A related to career growth
+
+    3.2
+
+A programming-oriented blog platform
+
+    3.0
+
+A peer mentoring system
+
+    2.8
+
+A private area for people new to programming
+
+    2.6
+
+70,687 responses; interest on a 1-5 scale, from not at all interested to extremely interested
+
+As we work to make our community a better place for developers to learn, share, and grow their careers, we asked our survey respondents about their interest in possible new tools. An employer review system and help with career growth garnered the most interest.
+What Words Do Developers Use to Describe Stack Overflow?
+
+    Top Words Used to Describe Stack Overflow
+    Top Words Used to Suggest Changes
+
+helpful
+
+    18.7%
+
+community
+
+    12.2%
+
+developer
+
+    10.2%
+
+people
+
+    8.7%
+
+question
+
+    7.3%
+
+great
+
+    7.0%
+
+good
+
+    6.9%
+
+help
+
+    6.7%
+
+answer
+
+    5.8%
+
+best
+
+    5.8%
+
+knowledge
+
+    5.2%
+
+place
+
+    4.9%
+
+awesome
+
+    4.2%
+
+problem
+
+    3.7%
+
+sometimes
+
+    3.5%
+
+useful
+
+    3.5%
+
+friendly
+
+    3.2%
+
+helping
+
+    3.2%
+
+can
+
+    3.1%
+
+learn
+
+    2.8%
+
+5,209 responses; % of respondents who used each word
+
+In these free response questions, we asked developers first to describe the Stack Overflow community in general, and then what they would change about it. Developers were largely positive about Stack Overflow, focusing on the helpful nature of the community, and specifically had ideas about how questions, answers, comments, and reputation are handled. The treatment of new users and new people in our community were mentioned often as well.
+Developers' Perspectives About Our Community
+
+This year, our survey included questions about what developers think the best, worst, most annoying, and most exciting things about Stack Overflow are. (These questions were randomized so that each respondent got one positive and one negative version.) In the positive versions of these questions, respondents were more likely to talk about the wealth of sharing and collaboration on our site. In the negative versions, respondents reflected on harsh interactions they've witnessed, downvotes, and handling of duplicate questions.
+
+Looking for a place for you and your technical team to ask and answer questions in a secure environment? Learn more about Stack Overflow for Teams. Want an on-premise or private cloud version? Check out Stack Overflow Enterprise.
+Methodology
+
+How we planned and analyzed our survey
+
+This report is based on a survey of 101,592 software developers from 183 countries around the world. This number of responses are what we consider “qualified” for analytical purposes based on completion and time spent on the survey; another approximately 20,000 responses were started but not included in the analysis because respondents did not answer enough questions. Of the qualified responses, 67,441 (66.4%) completed the entire survey.
+Qualified Responses Worldwide
+Europe 	39,001
+North America 	25,016
+Asia 	24,700
+South America 	4,162
+Africa 	2,869
+Australia/Oceania 	2,591
+Other (country not listed) 	84
+
+    The survey was fielded from January 8 to January 28.
+    The median time spent on the survey for qualified responses was 25.8 minutes, and the median time for those who finished the entire survey was 29.4 minutes.
+    Respondents were recruited primarily through channels owned by Stack Overflow. The top 5 sources of respondents were banner ads, email lists, house ads, blog posts, and Twitter. Since respondents were recruited in this way, highly engaged users on Stack Overflow were more likely to notice the links for the survey and click to begin it. Respondents who finished the survey were awarded a “Census” badge as a motivation to complete the survey.
+    We treated responses as qualified for analysis if the user spent a certain amount of time relative to how far they got into the survey. Most survey responses that spent less than 5 minutes were excluded from the final sample.
+    We asked respondents about their salary. First, we asked what currency each respondent typically used. Then we asked that respondent what their salary was in that currency, and whether that salary was weekly, monthly, or yearly.
+        For a short time on the first day, there was a bug that left out the last part of the question (weekly vs. monthly vs. yearly); those salary responses are not included here.
+        We converted salaries from user currencies to USD using the exchange rate on 2018-01-18, and also converted to annual salaries assuming 12 working months and 50 working weeks.
+        This question, like most on the survey, was optional. There were 58,650 respondents (57.7% of qualified respondents) who gave us salary data.
+        The top approximately 1% of salaries inside and outside of the US were trimmed and replaced with threshold values. The threshold values for inside and outside the US were different.
+    Many questions were only shown to respondents based on their previous answers. For example, questions about jobs and work were only shown to those who said they were working in a job.
+    The questions were organized into several blocks of questions, which were randomized in order. Also, the answers to most questions were randomized in order.
+    Due to an error, Oracle and SQLite were excluded from the question about databases for the first day of the survey. We carefully examined whether the results for the other databases changed from the first day compared to the rest of the survey fielding period and they did not. The results shown here for database use and most loved/dreaded/wanted databases only use responses from after Oracle and SQLite were added to the possible answers.
+    On 2018-3-19, we made some edits to this site based on community feedback to address two issues: a) how we handled the responses of transgender developers, to avoid implying that being a transgender man or woman is a separate gender and b) a higher level of clarity throughout the discussion about our survey sample and its limitations.
+
+Share This
+
+Built with ♥ using  c# jQuery font-awesome bootstrap unicorn tears

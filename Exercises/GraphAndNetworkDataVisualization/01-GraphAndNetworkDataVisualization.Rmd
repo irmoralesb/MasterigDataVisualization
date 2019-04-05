@@ -1,0 +1,83 @@
+---
+title: "Graph and Network Data"
+output: github_document
+---
+
+Setting up environment
+
+```{r}
+library(tidyverse)
+library(igraph)
+
+load("../rda/apps_versions_dataset.rda")
+load("../rda/apps_genres_dataset.rda")
+load("../rda/apps_categories_dataset.rda")
+apps_dataset <- apps_versions_dataset %>%
+  merge(apps_genres_dataset, by = "App") %>%
+  merge(apps_categories_dataset, by = "App") %>%
+  select(Content.Rating,Genre,App, Category)
+
+apps_genres_dataset <- NULL
+apps_versions_dataset <- NULL
+apps_categories_dataset <- NULL
+
+```
+
+
+## Small Graph
+
+```{r}
+apps_subset <- apps_dataset %>%
+  select(Content.Rating, Genre, App) %>%
+  group_by(Content.Rating, Genre) %>%
+  distinct() %>%
+  summarize(Count = n()) %>%
+  arrange(Content.Rating, Count) %>%
+  top_n(n = 5)
+
+smallGraph <- graph.data.frame(
+  d = apps_subset,
+  directed = FALSE)
+
+plot(
+  x = smallGraph,
+  edge.curved = FALSE,
+  main = "Top 5 Content Rating and Genre pairs")
+```
+
+## Large Graph
+
+```{r}
+apps_subset <- apps_dataset %>%
+  select(Category, Genre, App) %>%
+  distinct() %>%
+  group_by(Category, Genre) %>%
+  summarize(Count = n())
+
+
+largeGraph <- graph.data.frame(
+    d = apps_subset,
+    directed = FALSE)
+
+plot(
+  x = largeGraph,
+  vertex.size = 3,
+  vertex.label = NA,
+  edge.curved = FALSE,
+  edge.width = edge_attr(largeGraph)$Count/100,
+  main = "Content Rating and Genre Pairs")
+```
+
+## Community Graph
+
+```{r}
+clusters <-cluster_edge_betweenness(largeGraph)
+plot(
+  x = clusters,
+  y = largeGraph,
+  vertex.size = 3,
+  vertex.label = NA,
+  edge.curved = FALSE,
+  main = "Categories with Genres Community")
+```
+

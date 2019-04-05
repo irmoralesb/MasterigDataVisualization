@@ -1,0 +1,102 @@
+---
+title: "Textual Data Visualization"
+output: github_document
+---
+
+
+Document to analyze is from: 
+https://insights.stackoverflow.com/survey/2018/
+
+So we are seeing what are the most repeated words on this survey.
+
+Setting up environment
+
+```{r}
+library(tm) #Text library package
+library(SnowballC)
+library(wordcloud)
+library(RColorBrewer)
+library(readr)
+
+
+text_file <- read_file("../data/text.txt")
+```
+
+
+Convert into Corpus
+
+```{r}
+corpus <- Corpus(VectorSource(text_file))
+
+```
+
+To lower case
+
+```{r}
+corpus <- tm_map(corpus,content_transformer(tolower))
+```
+
+Remove Punctuation
+```{r}
+corpus <- tm_map(corpus, removePunctuation)
+```
+
+Remove stop words
+```{r}
+corpus <- tm_map(corpus, removeWords, stopwords("english"))
+```
+Reduce terms to stems
+
+```{r}
+corpus <- tm_map(corpus, stemDocument, "english")
+```
+
+Strip white spaces
+```{r}
+corpus <- tm_map(corpus, stripWhitespace)
+```
+
+Convert it to plain text document
+
+```{r}
+corpus <- tm_map(corpus, PlainTextDocument)
+```
+
+## Frequency Words
+
+```{r}
+wordcloud(
+  words = corpus[1],
+  max.words = 50)
+```
+
+## Quantitative Word Cloud
+
+```{r}
+words <- read.csv("../data/most_loved_programming_languages.csv")
+wordcloud(
+  words = words$ProgrammingLanguage,
+  freq = words$Percentage,
+  scale = c(2.5,0.1))
+```
+
+## Colored Word Cloud
+
+```{r}
+palette <- brewer.pal(
+  n = 9,
+  name = "Oranges")
+
+colors <- palette[cut(words$Percentage,9)]
+
+wordcloud(
+  words = words$ProgrammingLanguage,
+  freq = words$Percentage,
+  scale = c(2.5,0.5),
+  colors = colors,
+  ordered.colors = TRUE)
+
+```
+
+
+
