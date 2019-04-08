@@ -14,8 +14,8 @@ suicide_rates_dataset <- read.csv("../data/SuicideRatesOverview1985-to-2016.csv"
 suicide_dataset <- suicide_rates_dataset %>%
   merge(countries_geodata, by.x = "country", by.y = "name")
 
-countries_geodata <- NULL
-suicide_rates_dataset <- NULL
+#countries_geodata <- NULL
+#suicide_rates_dataset <- NULL
 
 ```
 
@@ -175,3 +175,89 @@ suicide_grouped_dataset %>%
       size = Count)) +
   labs(size = "Suicides")
 ```
+
+## Map Data
+
+```{r}
+map <- map_data("world")
+head(map)
+```
+
+```{r}
+suicide_dataset <- suicide_rates_dataset %>%
+  left_join(map, by =c("country" = "region")) %>%
+  select(
+    country,
+    Longitude = long,
+    Latitude = lat,
+    Group = group,
+    Order = order,
+    Suicides100k = suicides.100k.pop) %>%
+  arrange(Order) %>%
+  as.data.frame()
+```
+
+## Choropleth
+
+```{r}
+ggplot(data = suicide_dataset) +
+  borders(
+    database = "world",
+    colour = "grey60",
+    fill = "grey90") +
+  xlab("") +
+  ylab("") +
+  theme( panel.background = element_blank(),
+      axis.title.x=element_blank(),
+      axis.text.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.title.y=element_blank(),
+      axis.text.y=element_blank(),
+      axis.ticks.y=element_blank()) +
+  geom_polygon(
+    aes(
+      x = Longitude,
+      y = Latitude,
+      group = Group,
+      fill = Suicides100k),
+    colour = "grey60") +
+  scale_fill_gradient(
+    low = "white",
+    high = "red") +
+  ggtitle("Count of Suicides by Country") +
+  labs(color = "Suicides")
+  
+```
+
+```{r}
+ggplot(data = suicide_dataset) +
+  borders(
+    database = "world",
+    colour = "grey60",
+    fill = "grey90") +
+  xlab("") +
+  ylab("") +
+  theme( panel.background = element_blank(),
+      axis.title.x=element_blank(),
+      axis.text.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.title.y=element_blank(),
+      axis.text.y=element_blank(),
+      axis.ticks.y=element_blank()) +
+  coord_map(
+    projection = "ortho",
+    orientation = c(41,-74,0)) +
+  geom_polygon(
+    aes(
+     x = Longitude ,
+     y = Latitude,
+     group = Group,
+     fill = Suicides100k),
+    colour = "grey60") +
+  scale_fill_gradient(
+    low = "white",
+    high = "red") +
+  ggtitle("Count of Suicides by Country") +
+  labs(color = "Suicides")
+```
+

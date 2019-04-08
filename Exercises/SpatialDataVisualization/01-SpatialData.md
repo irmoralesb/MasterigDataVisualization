@@ -28,8 +28,8 @@ suicide_rates_dataset <- read.csv("../data/SuicideRatesOverview1985-to-2016.csv"
 suicide_dataset <- suicide_rates_dataset %>%
   merge(countries_geodata, by.x = "country", by.y = "name")
 
-countries_geodata <- NULL
-suicide_rates_dataset <- NULL
+#countries_geodata <- NULL
+#suicide_rates_dataset <- NULL
 ```
 
 Plots
@@ -214,3 +214,104 @@ suicide_grouped_dataset %>%
 ```
 
 ![](01-SpatialData_files/figure-markdown_github/unnamed-chunk-8-1.png)
+
+Map Data
+--------
+
+``` r
+map <- map_data("world")
+head(map)
+```
+
+    ##        long      lat group order region subregion
+    ## 1 -69.89912 12.45200     1     1  Aruba      <NA>
+    ## 2 -69.89571 12.42300     1     2  Aruba      <NA>
+    ## 3 -69.94219 12.43853     1     3  Aruba      <NA>
+    ## 4 -70.00415 12.50049     1     4  Aruba      <NA>
+    ## 5 -70.06612 12.54697     1     5  Aruba      <NA>
+    ## 6 -70.05088 12.59707     1     6  Aruba      <NA>
+
+``` r
+suicide_dataset <- suicide_rates_dataset %>%
+  left_join(map, by =c("country" = "region")) %>%
+  select(
+    country,
+    Longitude = long,
+    Latitude = lat,
+    Group = group,
+    Order = order,
+    Suicides100k = suicides.100k.pop) %>%
+  arrange(Order) %>%
+  as.data.frame()
+```
+
+    ## Warning: Column `country`/`region` joining factor and character vector,
+    ## coercing into character vector
+
+Choropleth
+----------
+
+``` r
+ggplot(data = suicide_dataset) +
+  borders(
+    database = "world",
+    colour = "grey60",
+    fill = "grey90") +
+  xlab("") +
+  ylab("") +
+  theme( panel.background = element_blank(),
+      axis.title.x=element_blank(),
+      axis.text.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.title.y=element_blank(),
+      axis.text.y=element_blank(),
+      axis.ticks.y=element_blank()) +
+  geom_polygon(
+    aes(
+      x = Longitude,
+      y = Latitude,
+      group = Group,
+      fill = Suicides100k),
+    colour = "grey60") +
+  scale_fill_gradient(
+    low = "white",
+    high = "red") +
+  ggtitle("Count of Suicides by Country") +
+  labs(color = "Suicides")
+```
+
+![](01-SpatialData_files/figure-markdown_github/unnamed-chunk-11-1.png)
+
+``` r
+ggplot(data = suicide_dataset) +
+  borders(
+    database = "world",
+    colour = "grey60",
+    fill = "grey90") +
+  xlab("") +
+  ylab("") +
+  theme( panel.background = element_blank(),
+      axis.title.x=element_blank(),
+      axis.text.x=element_blank(),
+      axis.ticks.x=element_blank(),
+      axis.title.y=element_blank(),
+      axis.text.y=element_blank(),
+      axis.ticks.y=element_blank()) +
+  coord_map(
+    projection = "ortho",
+    orientation = c(41,-74,0)) +
+  geom_polygon(
+    aes(
+     x = Longitude ,
+     y = Latitude,
+     group = Group,
+     fill = Suicides100k),
+    colour = "grey60") +
+  scale_fill_gradient(
+    low = "white",
+    high = "red") +
+  ggtitle("Count of Suicides by Country") +
+  labs(color = "Suicides")
+```
+
+![](01-SpatialData_files/figure-markdown_github/unnamed-chunk-12-1.png)

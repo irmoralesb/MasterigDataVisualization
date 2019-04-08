@@ -1,0 +1,61 @@
+---
+title: "Interactive Data Visualization"
+output: github_document
+---
+
+# Interactive
+
+```{r}
+library(dplyr)
+library(RColorBrewer)
+library(shiny)
+colors <- brewer.pal(4, "Set3")
+```
+
+
+
+## UI
+```{r}
+ui <- fluidPage(
+  titlePanel("Interactive Suicide Data"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput(
+        inputId = "year",
+        label = "Year",
+        min = 1985,
+        max = 2016,
+        value = c(1985, 2016),
+        sep = ""),
+      #checkboxGroupInput(
+      #  inputId = "rating",
+      #  label = "Rating",
+      #  choices = c("G", "PG", "PG-13", "R"),
+      #  selected = c("G", "PG", "PG-13", "R")),
+      textInput(
+        inputId = "country",
+        label = "country")),
+    mainPanel(
+      plotOutput(
+outputId = "plot"))))
+```
+
+
+## Server
+```{r}
+server <- function(input, output){
+  output$text <- renderText({
+    paste("You selected ", input$number)
+  })
+}
+```
+
+
+## App
+
+```{r}
+shinyApp(
+  ui = ui,
+  server = server)
+```
+
